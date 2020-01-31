@@ -205,7 +205,7 @@ main #portfolio ul li {
 footer {
     background-color: black;
     text-align: center;
-    height: auto;
+    height: 50px;
 
     /* position: fixed; */
     width: 100%;
