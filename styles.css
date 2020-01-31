@@ -1,6 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #3A5689;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    height: auto;
+    width: auto;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+    height: 100%;
+}
+
+.portfolio-img {
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portfolio-text {
+    height: 250px;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: medium;
+}
+
+
 nav {
+    padding-top: 73px;
     background-color: gray;
     color: white;
+    display: flex;
+}
+
+.nav-button {
+    justify-content: space-between;
+    width: 33.33%;
+    padding: 15px;
+    border: none;
+    background-color: gray;
+    color: white;
+    font-size: medium;
+}
+
+.nav-button:focus {
+    outline: none;
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: black;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+    font-size: x-large;
+    padding-top: 25px;
+}
+
+.header-line {
+    width: 25%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 nav ul {
@@ -14,41 +90,82 @@ nav ul {
 }
 
 header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #3A5689;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    position: fixed;
+}
+
+header img {
+    width: 60px;
+    height: 50px;
 }
 
 header div {
     padding: 10px;
 }
 
-nav .hamburger {
-    display: flex;
-    justify-content: flex-end;
-    padding: 2px 2px 2px 2px;
+#about-me {
+    background-color: #50CDDF;
+}
+
+i {
+    width: 25%;
+    padding: 5px;
     color: white;
+    justify-content: center;
+}
+
+i:hover {
+    color: grey;
 }
 
 nav ul li {
-    display: none;
+    display: inline;
+    padding: 10px;
+    text-align: center;
 }
 
-nav ul li:hover {
-    background-color: white;
-    color: black;
-}
 
 main #about-me {
-    height: 500px;
+    display: inline-block;
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portfolio-button {
+    width: 45%;
+    padding: 15px;
+    border: 1px solid grey;
+    background-color: #50CDDF;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.portfolio-button:hover {
+    background-color: gray;
+}
+
+main #about-me .content {
+    padding: 10px;
+    display: inline-block;
+    /* height: 300px; */
 }
 
 main #portfolio {
-    height: 500px;
+    height: auto;
     text-align: center;
-    background-color: gray;
+    margin-bottom: 75px;
+    background-color: #3A5689;
 }
 
 main #portfolio ul {
@@ -62,25 +179,39 @@ main #portfolio ul {
 }
 
 main #portfolio ul li {
-    color: white;
-    border: 1px black solid;
+    /* background-color: white; */
+    color: black;
+    /* border: 1px black solid; */
     border-radius: 25px;
-    width: 30%;
-
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
+
+/* .portfolio-head-text {
+    color: black;
+} */
 
 .content {
     border: 1px black solid;
     border-radius: 25px;
-    width: 100%;
+    background-color: white;
+    margin: 20px;
     height: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 footer {
+    background-color: black;
     text-align: center;
+    height: auto;
+
+    /* position: fixed; */
+    width: 100%;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 910px) {
     main #portfolio ul {
         margin: 0;
         padding: 0;
@@ -89,20 +220,5 @@ footer {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-    }
-
-    nav ul li {
-        display: inline;
-        padding: 10px;
-        text-align: center;
-    }
-
-    nav .hamburger {
-        display: none;
-    }
-
-    nav ul li:hover {
-        background-color: white;
-        color: black;
     }
 }

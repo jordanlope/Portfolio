@@ -6,46 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jordan Lopez</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    
+    <script src="https://kit.fontawesome.com/09879d175b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Roboto|Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div id="logo">
-            Logo
+            <img src='assets/Molosan-Logo.png'>
         </div>
         <div id="name">
-            Name
+            <p>Jordan Lopez</p>
         </div>
     </header>
     <nav role="navigation">
-        <div class="hamburger">&#9776;</div>
-        <ul>
-            <li id="nav-about-me">About Me</li>
-            <li id="nav-portfolio">Portfolio</li>
-            <li id="nav-contact">Contact</li>
-        </ul>
+        <button id="nav-about-me" class="nav-button">About Me</button>
+        <button id="nav-portfolio" class="nav-button">Portfolio</button>
+        <button id="nav-contact" class="nav-button">Contact</button>
     </nav>
     <main role="main">
         <section id="about-me">
             <h2>About me</h2>
-            <p class='content'>
-                content
-            </p>
+            <hr class="header-line">
+            <div class="content">
+                <p>
+                    Hi, my name is Jordan. I’m a mobile and web developer
+                </p>
+                <hr>
+                <p>
+                    Bio: I am highly interested in Mobile and Web development. My passion for programming started in my Junior year of High School. Ever since I have been learning a lot on Udemy courses, documentations, and Apprenticeship program at Thinkful.
+                </p>
+                <hr>
+                <p>
+                    When I am not coding, I enjoy reading books, philosophy, watching Tom and Jerry, and spending time with Family and Friends. 
+                </p>
+            </div>
         </section>
         <section id="portfolio">
             <h2>Portfolio</h2>
+            <hr class="header-line">
             <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
+                <li>
+                    <h2 class="portfolio-head-text">Localized App</h2>
+                    <img class="portfolio-img" src="assets/localized-app.PNG" alt="">
+                    <p class="portfolio-text">
+                        Description: Discover new places, events, and specials posted by local business owners. Localized uses your location to display real-time events and specials happening at businesses nearby. Find everything from happy hours and food specials to yoga classes, storefront sales and much more.
+                        <br><br>
+                        Techology used: Flutter, Firebase, Google Map API, Facebook API
+                    </p>
+                    <button class='portfolio-button' onclick="location.href='https://apps.apple.com/us/app/localized-app/id1475520885'" type="button">Apple Store</button>
+                    <button class='portfolio-button' onclick="location.href='https://play.google.com/store/apps/details?id=com.LBN.localizedapp'" type="button">Google Play Store</button>
+                </li>
+                <li>
+                    <h2 class="portfolio-head-text">Presidents Quiz</h2>
+                    <img class="portfolio-img" src="assets/quiz-app.png" alt="Jordan Lopez Quiz Application screen shot">
+                    <p class="portfolio-text">
+                        Description: This is a web quiz that allows users to learn cool Presidents facts that are great for conversation starters.
+                        <br><br>
+                        Techology used: HTML, CSS, JQuery
+                    </p>
+                    <button class='portfolio-button' onclick="location.href='https://github.com/jordanlope/QuizApp'" type="button">Github</button>
+                    <button class='portfolio-button' onclick="location.href='https://jordanlope.github.io/QuizApp/'" type="button">Live Page</button>
+                </li>
+                <li>
+                    <h2 class="portfolio-head-text">Localized 4 Business</h2>
+                    <img class="portfolio-img" src="assets/localized4business.PNG" alt="">
+                    <p class="portfolio-text">
+                        Description: Localized4Business is your portal to post all the exciting things happening at your business. Use the easy scheduling calendar to upload your day, week or months worth of events, specials, and happenings to auto-update directly to the Localized app. Localized uses location to show our users everything that's happening nearby in real-time. Reach new customers like never before!
+                        <br><br>
+                        Techology used: Flutter, Firebase, Facebook API
+                    </p>
+                    <button class='portfolio-button' onclick="location.href='https://apps.apple.com/cz/app/localized4business/id1475521133'" type="button">Apple Store</button>
+                    <button class='portfolio-button' onclick="location.href='https://play.google.com/store/apps/details?id=com.LBN.localized4business'" type="button">Google Play Store</button>
+                </li>
             </ul>
         </section>
     </main>
     <footer role="content-info">
-        <h2>Contact</h2>
-        <p class='content'>
-            content
-        </p>
+        <section id="content-info">
+            <a href = "mailto: jordanlopez992@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
+            <a href = "https://github.com/jordanlope"><i class="fab fa-github fa-2x"></i></a>
+            <a href = "https://www.linkedin.com/in/jordan-lopez-28538019a/"><i class="fab fa-linkedin fa-2x"></i></a>
+        </section>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
