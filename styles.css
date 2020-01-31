@@ -117,7 +117,6 @@ header div {
 }
 
 i {
-    width: 25%;
     padding: 5px;
     color: white;
     justify-content: center;
@@ -207,7 +206,6 @@ footer {
     text-align: center;
     height: 50px;
 
-    /* position: fixed; */
     width: 100%;
 }
 
