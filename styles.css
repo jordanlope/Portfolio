@@ -59,9 +59,9 @@ nav {
     padding: 15px;
     border: none;
     background-color: gray;
-    color: white;
+    color: black;
     font-size: medium;
-    text-shadow: black 0px 0px 10px;
+    text-shadow: grey 0px 0px 10px;
     font-size: 20px;
 }
 
