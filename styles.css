@@ -15,17 +15,12 @@ a {
 }
 
 h1 {
-    color: white;
-    text-shadow: black 0px 0px 10px;
+    color: black;
+    text-shadow: white 0px 0px 10px;
     font-size: 30px;
 }
 
 
-/* a:hover {
-    background-color: white;
-    color: black;
-    height: 100%;
-} */
 
 .portfolio-img {
     width: 75%;
@@ -58,6 +53,7 @@ nav {
     width: 33.33%;
     padding: 15px;
     border: none;
+    text-align: center;
     background-color: gray;
     color: black;
     font-size: medium;
@@ -160,8 +156,8 @@ main #about-me {
     border: 1px solid grey;
     background-color: #50CDDF;
     border-radius: 15px;
-    text-shadow: grey 0px 0px 10px;
-    color: white;
+    text-shadow: white 0px 0px 10px;
+    color: black;
     text-decoration: none;
     cursor: pointer;
 }
