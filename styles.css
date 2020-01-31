@@ -16,7 +16,8 @@ a {
 
 h1 {
     color: white;
-    text-shadow: grey 0px 0px 10px;
+    text-shadow: black 0px 0px 10px;
+    font-size: 30px;
 }
 
 
@@ -60,6 +61,8 @@ nav {
     background-color: gray;
     color: white;
     font-size: medium;
+    text-shadow: black 0px 0px 10px;
+    font-size: 20px;
 }
 
 .nav-button:focus {
@@ -137,6 +140,9 @@ nav ul li {
     display: inline;
     padding: 10px;
     text-align: center;
+    color: white;
+    text-shadow: black 0px 0px 10px;
+    font-size: 50px;
 }
 
 
